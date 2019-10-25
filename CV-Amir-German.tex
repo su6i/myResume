@@ -1,0 +1,90 @@
+\documentclass[11pt, a4paper]{moderncv}
+
+\usepackage[ngerman]{babel}   %Paket für deutsche Spracheinstellungen.
+\usepackage[utf8]{inputenc}  %Das Dokument soll UTF-8-Format nutzen (wegen deutschen Umlauten).
+\usepackage[left=2.4cm, right=1.0cm, top=1.7cm, bottom=2.0cm]{geometry}  %Seitenrand anpassen.
+ %\usepackage{fontawesome}  %Paket für schönere Symbole bei den persönlichen Daten.
+ 
+\usepackage{etoolbox}
+
+\moderncvstyle{classic} 
+\moderncvcolor{green}
+
+\patchcmd{\makecvtitle}{[b]}{[t]}{}{}
+\patchcmd{\makecvtitle}{[b]}{[t]}{}{}
+
+
+%\setlength{\makecvtitlenamewidth}{12cm}
+\renewcommand*{\namefont}{\fontsize{24}{29}\mdseries\upshape}
+
+ 
+ 
+ 
+ 
+ 
+\moderncvtheme[blue]{classic}
+ % \moderncvicons{awesome}
+ 
+ %Die persönlichen Daten:
+\name{Amir}{SHIRALI POUR}
+
+\title{Lebenslauf}
+\address{Rue Faubourg Boutonnet, 119}{34090 Montpellier, France}
+\phone[mobile]{06\,28 29 90 22}
+% \phone[fixed]{01234\,123456}
+% \phone[fax]{01234\,012345}
+\email{emasalari@gmail.com}
+% \homepage{www.meine-homepage.de}
+% \social[twitter][www.twitter.com]{Twitter-Name}
+\social[linkedin][https://www.linkedin.com/in/su6i]{su6i}
+\social[github][www.github.com/su6i]{su6i}
+\extrainfo{{Geb.:}{17.10.1981, Ahvaz, Iran}}
+\photo[3cm]{pic}  %Die Dateiendung wird weggelassen.
+ %\quote{Wenn Sie lieben, was Sie tun, werden Sie nie einen Tag in Ihrem Leben arbeiten!
+
+ 
+ 
+\begin{document}
+  \makecvtitle
+  
+  \section{Ausbildung und Berufliche Erfahrung}
+  \cventry{2019--2020}{Master in Informatik für Wissenschaftler}{an der Universität Montpellier}{Montpellier,Frankreich}{}{}
+  
+  \cventry{2017--2019}{Ingenieur für Telekommunikation und Computer Networks}{bei der NIOC (National Iranian Oil Company)}{Iran}{}{}
+  
+  \cventry{2016--2017}{Französisch Sprach- und Kulturkurse}{an der Universität Grenoble Alpes}{Grenoble,Frankreich}{}{Durchschnitt: 203/300}
+  
+%    \section{Berufliche Erfahrung}
+  \cventry{2015--2016}{Master in Elektronik (EEA-SE)}{an der Joseph Fourier Universität}{Grenoble}{Frankreich, 2 Semester}{}
+  \cventry{2013--2015}{Bachelor of Elektronisches Ingenieurwesen}{an der JDK Universität}{Iran}{}{Durchschnitt: 17.94/20}
+  \cventry{2010--2013}{Inspektor für Telekommunikationsprojekte}{bei der NIOC}{Ahvaz, Iran}{}{}
+  \cventry{2004--2010}{Elektriker / Elektroniker}{bei Semahal Company}{Ahvaz, Iran}{}{}
+  \cventry{2001--2004}{Associate Degree in Elektrotechniker-Elektronik}{an der Universität Shiraz}{Iran}{}{Durchschnitt: 14.02/20}
+  \cventry{2000--2001}{Voruniversitätsdiplom (pish daneshgahi)}{im Khatam-al-Anbia-Zentrum}{Iran}{}{}
+
+
+%  \section{Publikationen}
+%  \cvlistitem{Meine 1. Publikation.}
+%  \cvlistitem{Noch eine Publikation.}
+  
+  \section{EDV-Kenntnisse}
+  \cvcomputer{Office}{Word,Excel,Powerpoint}{Grafik}{Photoshop,GIMP}
+  \cvcomputer{Network}{CCNA Security, CCNA R\&S, \\Network+, Linux}{}{}
+  \subsection{Programmiersprachen}
+  \cvcomputer{}{C, C++, Python, Java}{Web languages}{HTML, CSS, Javascript, PHP}
+  
+  \section{Sprachkenntnisse}
+    \cvlanguage{Deutsche}{A1}{}
+    \cvcomputer{Englisch}{IELTS Akademisch 5.0}{Französisch}{DUEF B1}
+
+    \cvcomputer{Persisch}{Muttersprache}{Arabisch}{A2}
+  \cvlanguage{}{}{}
+
+  \section{Hobbys und Interessen}
+  \cvlistdoubleitem{Mein 1. Hobby ist Börsenhandel}{Mein anderes Hobby ist Radfahren}
+%  \cvlistdoubleitem{Noch ein Hobby von mir}{Ein weiteres Hobby}
+  
+  \vfill  %Platz bis Seitenende auffüllen.
+  Amir SHIRALI POUR\\
+  Montpellier, \today
+\end{document}
