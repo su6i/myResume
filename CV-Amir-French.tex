@@ -1,0 +1,90 @@
+\documentclass[11pt, a4paper]{moderncv}
+
+\usepackage[french]{babel}   
+\usepackage[utf8]{inputenc}  %Das Dokument soll UTF-8-Format nutzen (wegen deutschen Umlauten).
+\usepackage[left=2.4cm, right=1.0cm, top=1.7cm, bottom=2.0cm]{geometry}  %Seitenrand anpassen.
+ %\usepackage{fontawesome}  %Paket für schönere Symbole bei den persönlichen Daten.
+\usepackage[draft]{hyperref}
+ 
+\usepackage{etoolbox}
+
+\moderncvstyle{classic} 
+\moderncvcolor{green}
+
+\patchcmd{\makecvtitle}{[b]}{[t]}{}{}
+\patchcmd{\makecvtitle}{[b]}{[t]}{}{}
+
+
+%\setlength{\makecvtitlenamewidth}{12cm}
+\renewcommand*{\namefont}{\fontsize{24}{29}\mdseries\upshape}
+
+ 
+\moderncvtheme[blue]{classic}
+ % \moderncvicons{awesome}
+ 
+ %Die persönlichen Daten:
+\name{Amir}{SHIRALI POUR}
+
+\title{CV}
+\address{Cité universitaire Boutonnet, G319}{119 Rue du Faubourg Boutonnet}{34090 Montpellier, France}
+\phone[mobile]{06\,28 29 90 22}
+% \phone[fixed]{01234\,123456}
+% \phone[fax]{01234\,012345}
+\email{emasalari@gmail.com}
+% \homepage{www.meine-homepage.de}
+% \social[twitter][www.twitter.com]{Twitter-Name}
+\social[github]{www.github.com/su6i}
+\social[linkedin][]{https://www.linkedin.com/in/su6i}
+
+%\extrainfo{{Geb.:}{17.10.1981, Ahvaz, Iran}}
+\photo[3cm]{pic}  %Die Dateiendung wird weggelassen.
+ %\quote{Wenn Sie lieben, was Sie tun, werden Sie nie einen Tag in Ihrem Leben arbeiten!
+
+
+ 
+\begin{document}
+  \makecvtitle
+  \section{Expériences professionnelles}
+  
+    \cventry{2010-ce jour}{Trader en bourse}{Bourse de Téhéran}{Iran}{}{}
+
+  \cventry{2017-2019}{Ingénieur réseaux télécoms/info (VOIP Network)}{Compagnie pétrolière nationale iranienne (CPNI)}{Ahvaz,Iran}{}{}
+  \cventry{2014-2015}{Ingénieur réseaux télécoms/info (VOIP Network)}{CPNI}{Ahvaz,Iran}{}{}
+  \cventry{2010-2013}{Inspecteur des projets télécommunications}{CPNI}{Ahvaz,Iran}{}{}
+  
+  \subsection{Formation professionnelle}
+  \cventry{2018}{CCNA Security}{Compagnie pétrolière nationale iranienne (CPNI)}{deux semaines}{}{}
+  \cventry{2018}{CCNA CCNA R\&S}{CPNI}{deux semaines}{}{}
+  \cventry{2018}{Network+}{CPNI}{une semaines}{}{}
+
+  \subsection{Projets réalisés}
+  \cventry{2019}{Création d’un site web}{PHP, JavaScript, CSS, HTML5}{}{}{}
+  \cventry{2019}{Extraction automatique des données du Wikipedia}{Python, Flask, CSS, HTML5}{Thème Finance}{}{}
+  \cventry{2019}{Extraction automatique des données de  plusieurs sites Fact Checking}{Python, NLP}{Thème Fact Checking, Fake News}{}{}{}
+  \cventry{2019}{Création d’une application monopage(Single Page Application SPA)}{MEAN Stack (MongoDB, Express, Angular 10, Node.js)}{}{}{}
+  
+  
+  \section{Diplômes}
+%    \section{Berufliche Erfahrung}
+  \cventry{2019--ce jour}{Master en Informatique pour les sciences}{à l'Université de Montpellier}{}{France}{} 
+  \cventry{2016--2017}{Cours de langue et de culture françaises}{au CUEF}{Grenoble}{France}{}
+  \cventry{2013--2015}{Licence[bac+4 en Iran] en génie électronique}{à l'Univ JDK}{Iran}{}{}
+  \cventry{2001--2004}{Diplôme[bac+2] en électricité, option: électronique}{à l'Univ de Chiraz}{Iran}{}{}
+
+
+%  \section{Publikationen}
+%  \cvlistitem{Meine 1. Publikation.}
+%  \cvlistitem{Noch eine Publikation.}
+  
+  \section{Compétences informatiques}
+        \cventry{Web}{MEAN Stack}{, HTML, CSS, Javascript, PHP}{}{}{}
+        \cventry{Bases de donées}{Oracle}{, MySQL, MongoDB}{}{}{}
+        \cventry{langages de programmation}{Python}{}{Java}{C/C++}{}
+
+  \section{Compétences linguistiques}
+    \cvlanguage{Français B2}{Anglais B2, Arabe A2, Allemand A1, Persan(Farsi) Langue maternelle}{}
+
+  \vfill  %Platz bis Seitenende auffüllen.
+  Amir SHIRALI POUR\\
+  Montpellier, \today
+\end{document}
