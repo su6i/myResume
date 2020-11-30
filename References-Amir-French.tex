@@ -1,0 +1,145 @@
+\documentclass{moderncv} % Version 2.0.0
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+
+
+
+
+\usepackage[french]{babel}   
+\usepackage[utf8]{inputenc}  %Das Dokument soll UTF-8-Format nutzen (wegen deutschen Umlauten).
+\usepackage[left=2.4cm, right=1.0cm, top=1.7cm, bottom=2.0cm]{geometry}  %Seitenrand anpassen.
+ %\usepackage{fontawesome}  %Paket für schönere Symbole bei den persönlichen Daten.
+\usepackage[draft]{hyperref}
+ 
+\usepackage{etoolbox}
+
+\patchcmd{\makecvtitle}{[b]}{[t]}{}{}
+\patchcmd{\makecvtitle}{[b]}{[t]}{}{}
+
+
+%\setlength{\makecvtitlenamewidth}{12cm}
+\renewcommand*{\namefont}{\fontsize{24}{29}\mdseries\upshape}
+ 
+\moderncvtheme[blue]{classic}
+ % \moderncvicons{awesome}
+ 
+ 
+ 
+ 
+ 
+\name{Amir}{SHIRALI POUR} % <====================================================
+\title{CV}
+\address{Cité universitaire Boutonnet, G319}{119 Rue du Faubourg Boutonnet}{34090 Montpellier, France}
+\phone[mobile]{06\,28 29 90 22}
+% \phone[fixed]{01234\,123456}
+% \phone[fax]{01234\,012345}
+\email{emasalari@gmail.com}
+% \homepage{www.meine-homepage.de}
+% \social[twitter][www.twitter.com]{Twitter-Name}
+\social[github]{www.github.com/su6i}
+\social[linkedin][]{https://www.linkedin.com/in/su6i}
+
+%\extrainfo{{Geb.:}{17.10.1981, Ahvaz, Iran}}
+\photo[3cm]{pic}  %Die Dateiendung wird weggelassen.
+ %\quote{Wenn Sie lieben, was Sie tun, werden Sie nie einen Tag in Ihrem Leben arbeiten!
+ 
+ 
+ 
+ 
+% Define \cvdoublecolumn, which sets its arguments in two columns without any labels
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[0.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+% usage: \cvreference{name}{address line 1}{address line 2}{address line 3}{address line 4}{e-mail address}{phone number}
+% Everything but the name is optional
+% If \addresssymbol, \emailsymbol or \phonesymbol are specified, they will be used.
+% (Per default, \addresssymbol isn't specified, the other two are specified.)
+% If you don't like the symbols, remove them from the following code, including the tilde ~ (space).
+
+\newcommand{\cvreference}[9]{%
+\raggedright % <========================================================
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{\homepage~#3\newline\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{#6\newline}%
+    \ifthenelse{\equal{#7}{}}{}{#7\newline}%
+    \ifthenelse{\equal{#8}{}}{}{\emailsymbol~\url{#8}\newline}% <=======
+    \ifthenelse{\equal{#9}{}}{}{\phonesymbol~#9\newline}}
+
+
+\makeatletter % <=======================================================
+\renewcommand\footnoterule{%
+\vspace{3mm}
+  \kern-3\p@
+  \hrule\@width.4\columnwidth
+  \kern2.6\p@}
+\newcommand\@makefntext[1]{%
+    \parindent 1em%
+    \noindent
+    \hb@xt@1.8em{\hss\@makefnmark}#1}
+\makeatother % <========================================================
+
+
+\begin{document} 
+
+\makecvtitle % <========================================================
+
+\section{References}
+
+%\subsection{Master en informatique}
+
+\cvonecolumn{\cvreference{Marianne HUCHARD\footnote{Mon prof des modules Programmation Java et Structures de données }} % <===
+    {Professeur d'Université de Montpellier, Faculté Des Sciences}
+    {http://www.lirmm.fr/\textasciitilde huchard}
+    {LIRMM - UMR5506}
+    {Laboratoire d'Informatique, de Robotique et de Microélectronique de Montpellier}
+    {Université Montpellier - CNRS (Institut INS2I)}
+    {Bât 4., 161, rue Ada, 34095 Montpellier cedex 5}
+    {marianne.huchard@lirmm.fr}
+    {+33 (0)4 67 41 86 58}
+    }
+    \newline
+    \newline
+    {\cvreference{Pierre POMPIDOR\footnote{Mon professeur des modules Système d'exploitation Linux, Technologies avancées du web et Données du Web }}
+    {Professeur d'Université de Montpellier, Faculté Des Sciences}
+    {http://www.lirmm.fr/\textasciitilde pompidor}
+    {LIRMM - Bureau 03/164}
+    {Laboratoire d'Informatique, de Robotique et de Microélectronique de Montpellier}
+    {}
+    {Bât 5., 161, rue Ada, 34095 Montpellier cedex 5}
+    {pierre.pompidor@lirmm.fr}
+    {+33 (0)4 67 41 85 36}
+    }
+    \newline
+    \newline
+{\cvreference{Roman Bezrukavnikov}
+    {Department of Mathematics}
+    {Massachusetts Institute of Technology}
+    {Bât 4., 161, rue Ada}
+    {34095 Montpellier cedex 5, France}
+    {http://www.lirmm.fr/~{}huchard}
+    {+33 (0)4 67 41 86 58}
+    }
+    \newline
+    \newline
+    {\cvreference{Tom Braden}
+    {Department of Mathematics}
+    {University of Massachusetts}
+    {Amherst, MA 94720-3840}
+    {}
+    {braden@math.umass.edu}
+    {413-545-1732}
+    }
+
+\end{document}
+
+
