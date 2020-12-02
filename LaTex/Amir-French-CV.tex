@@ -4,7 +4,6 @@
 \usepackage[utf8]{inputenc}  %Das Dokument soll UTF-8-Format nutzen (wegen deutschen Umlauten).
 \usepackage[left=2.4cm, right=1.0cm, top=1.7cm, bottom=2.0cm]{geometry}  %Seitenrand anpassen.
  %\usepackage{fontawesome}  %Paket für schönere Symbole bei den persönlichen Daten.
-\usepackage{hyperref}
 
 
 \usepackage{etoolbox}
@@ -26,15 +25,17 @@
 \name{Amir}{SHIRALI POUR}
 
 \title{CV}
-\address{Cité universitaire Boutonnet, G319}{119 Rue du Faubourg Boutonnet}{34090 Montpellier, France}
+%\address{Cité universitaire Boutonnet, G319}{119 Rue du Faubourg Boutonnet}{34090 Montpellier, France}
+\address{}{}{34090 Montpellier, France}
 \phone[mobile]{06\,28 29 90 22}
 % \phone[fixed]{01234\,123456}
 % \phone[fax]{01234\,012345}
+
 \email{emasalari@gmail.com}
 % \homepage{www.meine-homepage.de}
 % \social[twitter][www.twitter.com]{Twitter-Name}
 \social[github]{www.github.com/su6i}
-\social[linkedin][]{https://www.linkedin.com/in/su6i}
+\social[linkedin]{www.linkedin.com/in/su6i}
 
 %\extrainfo{{Geb.:}{17.10.1981, Ahvaz, Iran}}
 %\photo[3cm]{pic}  %Die Dateiendung wird weggelassen.
@@ -43,7 +44,8 @@
 
  
 \begin{document}
-\begin{NoHyper}
+%\hypersetup{nolinks=true} 
+%\begin{NoHyper}
 \vspace*{-1.5\baselineskip}
   \maketitle
   \vspace{-2\baselineskip}
@@ -67,8 +69,6 @@
   \cventry{2020}{Création d’une application web}{avec Java EE, Spring Boot et MySQL}{Git}{}{}
   \cventry{2020}{Création d’un panier}{ avec Symfony, PHP}{Git}{Docker}{}
   \cventry{2020}{Création d’un panier monopage}{avec MEAN Stack}{Git}{Docker}{}
-  
-  
   
   \section{ÉTUDES}
   \cventry{2019--ce jour}{Master en informatique}{à l'Université de Montpellier}{}{France}{} 
@@ -94,7 +94,7 @@
 
   Amir SHIRALI POUR\\Montpellier, \today
   
-\end{NoHyper}
+%\end{NoHyper}
 \end{document}
 
 
