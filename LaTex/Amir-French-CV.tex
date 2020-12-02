@@ -4,8 +4,9 @@
 \usepackage[utf8]{inputenc}  %Das Dokument soll UTF-8-Format nutzen (wegen deutschen Umlauten).
 \usepackage[left=2.4cm, right=1.0cm, top=1.7cm, bottom=2.0cm]{geometry}  %Seitenrand anpassen.
  %\usepackage{fontawesome}  %Paket für schönere Symbole bei den persönlichen Daten.
-\usepackage[draft]{hyperref}
- 
+\usepackage{hyperref}
+
+
 \usepackage{etoolbox}
 
 \moderncvstyle{classic} 
@@ -36,15 +37,16 @@
 \social[linkedin][]{https://www.linkedin.com/in/su6i}
 
 %\extrainfo{{Geb.:}{17.10.1981, Ahvaz, Iran}}
-\photo[3cm]{pic}  %Die Dateiendung wird weggelassen.
+%\photo[3cm]{pic}  %Die Dateiendung wird weggelassen.
  %\quote{Wenn Sie lieben, was Sie tun, werden Sie nie einen Tag in Ihrem Leben arbeiten!
 
 
  
 \begin{document}
-\vspace*{-2.5\baselineskip}
+\begin{NoHyper}
+\vspace*{-1.5\baselineskip}
   \maketitle
-  \vspace{-2.5\baselineskip}
+  \vspace{-2\baselineskip}
   \section{EXPERIENCES PROFESSIONNELLES}
   
     \cventry{2010-ce jour}{Trader en bourse}{Bourse de Téhéran}{Iran}{}{}
@@ -59,12 +61,12 @@
   \subsection{PROJETS RÉALISÉS}
   \cventry{2019}{Création d’un site web}{PHP, JavaScript, CSS, HTML5}{}{}{}
   \cventry{2019}{Extraction automatique des données de l'indice S\&P 500}{Python, Flask}{}{}{}
-  \cventry{2019}{Extraction automatique des données de  plusieurs sites Fact Checking}{Python, NLP, NLTK, spaCy, Beautiful Soup, lxml}{}{}{}{}
-  \cventry{2020}{Création d’une application monopage(Single Page Application SPA)}{MEAN Stack (MongoDB, Express, Angular 10, Node.js)}{}{}{}
+  \cventry{2019}{Extraction automatique des données de  plusieurs sites Fact Checking}{Python, NLP, NLTK, spaCy, Beautiful Soup, lxml}{Git}{Visual Studio Live Share}{}{}
+  \cventry{2020}{Création d’une application monopage(Single Page Application SPA)}{MEAN Stack (MongoDB, Express, Angular 10, Node.js)}{Git}{Docker}{}
   
-  \cventry{2020}{Création d’une application web}{avec Java EE, Spring Boot et MySQL}{}{}{}
-  \cventry{2020}{Création d’un panier}{ avec Symfony, PHP}{}{}{}
-  \cventry{2020}{Création d’un panier monopage}{avec MEAN Stack}{}{}{}
+  \cventry{2020}{Création d’une application web}{avec Java EE, Spring Boot et MySQL}{Git}{}{}
+  \cventry{2020}{Création d’un panier}{ avec Symfony, PHP}{Git}{Docker}{}
+  \cventry{2020}{Création d’un panier monopage}{avec MEAN Stack}{Git}{Docker}{}
   
   
   
@@ -76,7 +78,7 @@
 
 
   \section{COMPÉTENCES INFORMATIQUES}
-        \cventry{Web}{\mdseries MEAN Stack, Express, Angular, Node.js, Javascript, TypeScript}{Symfony, PHP}{HTML, CSS}{XML, XSL, XHTML, DHTML}{}
+        \cventry{Web}{\mdseries MEAN Stack, Express, Angular, Node.js, Javascript, TypeScript}{Symfony, PHP}{HTML, CSS}{XML, XSL}{}
         \cventry{Bases de donées}{\mdseries Oracle}{MySQL, MongoDB}{Langage PL/SQL}{SQLite}{}
         \cventry{\textbf{Java}}{\mdseries Java SE}{Java EE}{Spring Boot, Hibernate, JPA}{}{}
         \cventry {\textbf{Python}}{\textbf{Machine Learning}}{Numpy, Scipy, Scikit-learn, TensorFlow, Theano, Keras, PyTorch, Pandas, Matplotlib, }{\textbf{Web scraping et automation:} Beautiful Soup, Selenium, lxml}{\textbf{Image processing:} OpenCV, scikit-image, PIL/Pillow}{}{}
@@ -89,9 +91,17 @@
     \cvlanguage{Français B2}{Anglais B2, Arabe A2, Allemand A1, Persan(Farsi) Langue maternelle}{}
 
   \vfill  
-    \vspace{-0.5\baselineskip}
 
-  Amir SHIRALI POUR à Montpellier, le \today
-  %Amir SHIRALI POUR\\ 
-  %Montpellier, \today
+  Amir SHIRALI POUR\\Montpellier, \today
+  
+\end{NoHyper}
 \end{document}
+
+
+
+
+
+
+
+
+
